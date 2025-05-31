@@ -6,8 +6,6 @@ for i in range(len(l1)):
         if l1[i] == l2[j]:
             l1[i] = "2"
             l2[j] = "2"
-print(l1)
-print(l2)
 a = len(l1) - l1.count("2")
 b = len(l2) - l2.count("2")
 tot = a + b
