@@ -20,4 +20,3 @@ for i in range(n):
     l[i].area()
     l[i].peri()
     print("---------")
-print(i)
