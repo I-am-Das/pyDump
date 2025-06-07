@@ -2,14 +2,33 @@ import random
 
 
 def get_word():
-    words = [
-        "python", "programming", "computer", "algorithm", "developer",
-        "keyboard", "monitor", "application", "variable", "function",
-        "internet", "webpage", "database", "security", "network",
-        "galaxy", "universe", "planet", "star", "telescope",
-        "ocean", "mountain", "forest", "desert", "river",
-        "elephant", "giraffe", "monkey", "penguin", "dolphin",
-        "chocolate", "vanilla", "strawberry", "blueberry", "pineapple"
+    words =  ["apple", "ball", "tree", "house", "elephant", "caterpillar", 
+        "giraffe", "computer", "python", "keyboard", "javascript", "developer", "soccer", 
+        "watermelon", "rocket", "champion", "library", "horizon", "starfish", "database", 
+        "mountain", "exercise", "scenery", "wildlife", "adventure", "fireplace", "airplane", 
+        "sunshine", "candle", "monitor", "camera", "planet", "universe", "dolphin", "butterfly",
+        "jungle", "forest", "mountain", "island", "moon", "star", "planet", "solar", 
+        "rainbow", "cloud", "stone", "iron", "sand", "wood", "rock", "earth",  "water", 
+        "ocean", "desert", "oasis", "canyon", "cave", "horizon", "tornado", "volcano", "earthquake",
+        "glacier", "hurricane", "blizzard", "snowstorm", "lightning", "tsunami", "cliff", "waterfall",
+        "whirlpool", "fog", "mist", "breeze", "winds", "cyclone", "tornado", "earth", "soil", "mud", 
+        "forest", "savannah", "rain", "storm", "thunder", "sunbeam", "sunlight", "shadow", "reflection", 
+        "glow", "glimmer", "flash", "sparkle", "glitter", "shine", "twilight", "dawn", "dusk", "midnight", 
+        "noon", "evening", "morning", "daylight", "sunrise", "sunset", "calm", "peace", "serenity", "joy",
+        "harmony", "delight", "bliss", "laughter", "smile", "happiness", "freedom", "solace", "tranquility", 
+        "elation", "contentment", "blissful", "ecstasy", "joyful", "cheerful", "optimism", "hope", "faith", 
+        "trust", "belief", "strength", "resilience", "determination", "grit", "perseverance", "courage", 
+        "bravery", "valor", "honor", "integrity", "loyalty", "respect", "kindness", "compassion", "generosity",
+        "empathy", "gratitude", "thankful", "appreciation", "understanding", "patience", "humility", 
+        "forgiveness", "caring", "helpful", "altruism", "benevolence", "goodness", "positivity", "energy",
+        "enthusiasm", "motivation", "focus", "discipline", "organization", "productivity", "creativity", 
+        "imagination", "innovation", "invention", "curiosity", "exploration", "discovery", "adventure", 
+        "journey", "expedition", "voyage", "quest", "mission", "destination", "dream", "aspiration", 
+        "goal", "success", "achievement", "accomplishment", "progress", "growth", "development", "improvement",
+        "evolution", "transformation", "change", "adaptation", "resurgence", "renewal", "rebirth", "newness",
+        "breakthrough", "recovery", "healing", "restoration", "revival", "rejuvenation", "hopeful", 
+        "uplifting", "inspiration", "motivate", "drive", "determined", "focused", "hardworking", "dedication",
+        "ambition", "success", "victory", "champion", "winner", "hero", "star", "genius", "leader", "pioneer"
     ]
     return random.choice(words).upper()
 
@@ -65,8 +84,8 @@ def display_hangman(incorrect_guesses):
            -----
            |   |
            O   |
-          /    |
-               |
+          / | \  |
+           /   |
                |
           -------
         """,
@@ -74,8 +93,8 @@ def display_hangman(incorrect_guesses):
            -----
            |   |
            O   |
-          /|\\  |
-          / \\  |
+          /|\  |
+          / \  |
                |
           -------
         """
